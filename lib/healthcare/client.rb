@@ -22,7 +22,8 @@ module HealthCare
         passwd:        params[:password]
       }
       @cookie = res.headers['set-cookie']
-      res.body
+
+      res.headers['location'].include? '../home/home.php'
     end
 
     def user_data
