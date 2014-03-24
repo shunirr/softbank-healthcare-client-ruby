@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-module HealthCare
+module SoftBankHealthCare
   class Client
     def initialize(params)
       @api = ApiClient.new

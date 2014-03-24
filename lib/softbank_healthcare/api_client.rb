@@ -4,7 +4,7 @@ require 'faraday'
 require 'json'
 require 'date'
 
-module HealthCare
+module SoftBankHealthCare
   class ApiClient
     def initialize
       @conn = Faraday.new(:url => 'https://healthcare.mb.softbank.jp') do |faraday|

@@ -14,20 +14,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install healthcare
+    $ gem install softbank-healthcare-client
 
 ## Usage
 
-Require `healthcare` library.
+Require `softbank_healthcare` library.
 
 ```ruby
-require 'healthcare'
+require 'softbank_healthcare'
 ```
 
-Login to healthcare web service. You can use 301SI tel number and password.
+Login to SoftBank HealthCare web service. You can use 301SI tel number and password.
 
 ```ruby
-client = HealthCare::Client.new telno: '09012345678', password: '1234'
+client = SoftBankHealthCare::Client.new telno: '09012345678', password: '1234'
 ```
 
 Fetch and show your health data.

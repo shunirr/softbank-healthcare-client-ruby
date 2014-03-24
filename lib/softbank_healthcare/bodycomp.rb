@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-module HealthCare
+module SoftBankHealthCare
   class Bodycomp
     attr_accessor :weight, :bodyfat, :number, :value, :level
 

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'healthcare/version'
+require 'softbank_healthcare/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "softbank-healthcare-client"
-  spec.version       = HealthCare::VERSION
+  spec.version       = SoftBankHealthCare::VERSION
   spec.authors       = ["shunirr"]
   spec.email         = ["m@s5r.jp"]
   spec.summary       = %q{Softbank HealthCare Client for Ruby}
