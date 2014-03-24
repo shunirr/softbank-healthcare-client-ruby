@@ -3,5 +3,6 @@
 require "healthcare/version"
 
 module HealthCare
-  autoload :Client, 'healthcare/client'
+  autoload :Client,   'healthcare/client'
+  autoload :Bodycomp, 'healthcare/bodycomp'
 end
