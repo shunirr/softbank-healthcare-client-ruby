@@ -1,6 +1,6 @@
-# Healthcare
+# Softbank HealthCare Client
 
-TODO: Write a gem description
+[Softbank HealthCare](https://healthcare.mb.softbank.jp/pc/) client library for ruby.
 
 ## Installation
 
@@ -18,7 +18,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require `healthcare` library.
+
+```ruby
+require 'healthcare'
+```
+
+Login to healthcare web service. You can use 301SI tel number and password.
+
+```ruby
+client = HealthCare::Client.new telno: '09012345678', password: '1234'
+```
+
+Fetch and show your health data.
+
+```ruby
+client.weight # 体重(kg)
+client.body_fat # 体脂肪率(%)
+client.bmi # BMI
+client.basal_metabolism # 基礎代謝
+client.physical_age # 身体年齢(歳)
+client.skeletal_muscle_level # 骨格筋レベル
+client.bone_level # 骨レベル
+client.visceral_fat_level # 内臓脂肪レベル
+client.water_content # 水分量 (%)
+```
 
 ## Contributing
 
