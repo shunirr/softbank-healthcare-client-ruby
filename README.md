@@ -6,7 +6,7 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'healthcare'
+    gem 'softbank-healthcare-client'
 
 And then execute:
 
