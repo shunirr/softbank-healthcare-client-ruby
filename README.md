@@ -44,6 +44,13 @@ client.visceral_fat_level # 内臓脂肪レベル
 client.water_content # 水分量 (%)
 ```
 
+if you want fetch yesterday data, you can set date.
+
+```ruby
+client.date = Date.today - 1
+client.weight
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/shunirr/softbank-healthcare-client-ruby/fork )
