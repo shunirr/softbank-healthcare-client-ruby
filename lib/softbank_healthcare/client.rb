@@ -8,8 +8,12 @@ module SoftBankHealthCare
       refresh
     end
 
-    def refresh
-      @summary = @api.home_summary['root']
+    def date=(v)
+      refresh v
+    end
+
+    def refresh(date = Date.today)
+      @summary = @api.home_summary(date)['root']
     end
 
     def weight
