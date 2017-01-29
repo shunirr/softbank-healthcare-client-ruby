@@ -14,7 +14,7 @@ module SoftBankHealthCare
     end
 
     def login(params = {})
-      res = @conn.post '/pc/assets/dispatcher/Register.php', {
+      res = @conn.post '/pc/web/assets/dispatcher/Register.php', {
         userid:        1,
         register_type: 3,
         api_pattern:   'web_login.php',
@@ -120,7 +120,7 @@ module SoftBankHealthCare
     private
     def get(params = {})
       res = @conn.get do |req|
-        req.url '/pc/assets/dispatcher/Dispatcher.php' 
+        req.url '/pc/web/assets/dispatcher/Dispatcher.php'
         req.headers['cookie'] = @cookie
         req.params[:dispatcher_type] = 0
         req.params.merge! params
