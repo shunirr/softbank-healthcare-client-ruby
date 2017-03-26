@@ -45,7 +45,7 @@ module SoftBankHealthCare
     end
 
     def visceral_fat_level
-      @summary['viscerafal']
+      @summary['visceralfat']
     end
 
     def water_content
